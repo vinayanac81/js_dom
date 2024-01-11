@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="main-project">
+    <div class="form-box">
+      <h1>Signup</h1>
+      <div id="alert" class="alert"><span class="span"> </span></div>
+
+      <form action="">
+        <div class="name-section">
+          <input
+            id="f_name"
+            class="name-input"
+            onblur="firstNameInput()"
+            onkeypress="pressed()"
+            type="text"
+            placeholder="First name"
+          />
+          <input
+            id="l_name"
+            class="name-input"
+            type="text"
+            onblur="lastNameInput()"
+            onkeypress="pressed()"
+            placeholder="Last name"
+          />
+        </div>
+
+        <br />
+        <input
+          id="email"
+          onkeypress="pressed()"
+          class="input"
+          type=" text"
+          placeholder="Enter email"
+        />
+        <br />
+        <br />
+        <input
+          id="mobile"
+          class="input"
+          type=" text"
+          onkeypress="pressed()"
+          placeholder="Enter mobile number"
+        />
+        <br />
+        <br />
+        <input
+          id="password"
+          class="input"
+          type=" text"
+          onkeypress="pressed()"
+          placeholder="Password"
+        />
+        <br />
+        <br />
+        <input
+          id="confirmPassword"
+          class="input"
+          onkeypress="pressed()"
+          type=" text"
+          placeholder="Confirm password"
+        />
+        <br />
+        <br />
+      </form>
+      <div class="hi">
+        <button id="btn" onclick="submit()" class="butto">Submit</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
